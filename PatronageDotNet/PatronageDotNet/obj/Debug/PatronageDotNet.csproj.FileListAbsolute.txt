@@ -1,0 +1,13 @@
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.dll.config
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.pdb
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\nunit.framework.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\TechTalk.SpecFlow.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.Support.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\nunit.framework.xml
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.xml
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.Support.xml
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.csprojResolveAssemblyReference.cache
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.dll
+H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.pdb
