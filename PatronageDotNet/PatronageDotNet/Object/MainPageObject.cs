@@ -19,5 +19,8 @@ namespace PatronageDotNet.Object.MainPage
         [FindsBy(How = How.LinkText, Using = "Lista aktualności")]
         public IWebElement RedBox { get; set; }
 
+        [FindsBy(How = How.LinkText, Using = "Użytkownicy")]
+        public IWebElement OrangeBox { get; set; }
     }
+    
 }

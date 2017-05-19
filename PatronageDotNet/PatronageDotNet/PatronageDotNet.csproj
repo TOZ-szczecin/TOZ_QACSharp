@@ -64,6 +64,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>newPostAdd.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\newUserAdd.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>newUserAdd.feature</DependentUpon>
+    </Compile>
     <Compile Include="Object\BaseObject.cs" />
     <Compile Include="Object\MainPageObject.cs" />
     <Compile Include="Steps\NewPostAddSteps.cs" />
@@ -72,14 +77,23 @@
     <Compile Include="Object\CalendarPageObject.cs" />
     <Compile Include="Object\UserListPageObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\NewUserAddSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Features\newPostAdd.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>newPostAdd.feature.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
+    <None Include="Features\newUserAdd.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>newUserAdd.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
