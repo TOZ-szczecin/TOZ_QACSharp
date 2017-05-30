@@ -11,3 +11,16 @@ H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.Support.x
 H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.csprojResolveAssemblyReference.cache
 H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.dll
 H:\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.pdb
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.dll.config
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\PatronageDotNet.pdb
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\nunit.framework.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\TechTalk.SpecFlow.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.Support.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\nunit.framework.xml
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.xml
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\bin\Debug\WebDriver.Support.xml
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.csprojResolveAssemblyReference.cache
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.dll
+D:\Patronage\TOZ_QACSharp\TOZ_QACSharp\PatronageDotNet\PatronageDotNet\PatronageDotNet\obj\Debug\PatronageDotNet.pdb

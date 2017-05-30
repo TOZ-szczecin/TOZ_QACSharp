@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace PatronageDotNet.Object.UserList
 {
-    public class UserListPageObject : BasePageObject
+    public class UserListPageObject
     {
-        public UserListPageObject(IWebDriver driver)
-         : base(driver)
+        public UserListPageObject(IWebDriver Driver)
         {
             PageFactory.InitElements(Driver, this);
         }
@@ -37,7 +36,10 @@ namespace PatronageDotNet.Object.UserList
         [FindsBy(How = How.Id, Using = "Email")]
         public IWebElement Email { get; set; }
 
-        [FindsBy(How = How.Id, Using = "Purpose")]
+        [FindsBy(How = How.Id, Using = "Password")]
+        public IWebElement Password { get; set; }
+
+        [FindsBy(How = How.Id, Using = "Roles")]
         public IWebElement SelectRole { get; set; }
 
         [FindsBy(How = How.Id, Using = "Cancel")]

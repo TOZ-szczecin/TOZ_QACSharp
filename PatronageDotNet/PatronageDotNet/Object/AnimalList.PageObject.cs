@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace PatronageDotNet.Object.AnimalList
 {
-    public class AnimalListPageObject : BasePageObject
+    public class AnimalListPageObject 
     {
-        public AnimalListPageObject(IWebDriver driver)
-         : base(driver)
+        public AnimalListPageObject(IWebDriver Driver)
         {
             PageFactory.InitElements(Driver, this);
         }

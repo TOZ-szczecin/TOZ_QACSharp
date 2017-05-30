@@ -66,8 +66,8 @@ namespace PatronageDotNet.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Creating a new user")]
         [NUnit.Framework.CategoryAttribute("addUser")]
-        [NUnit.Framework.TestCaseAttribute("TestowyJuzek", "Józef", "555444333", "Juzz@ek.com", "Wolontariusz", new string[0])]
-        public virtual void CreatingANewUser(string name, string surname, string phoneNumber, string email, string role, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("toz_user0.email@gmail.com", "TOZ_name_0", "TestowyJuzek", "Józef", "555444333", "Juzz@ek.com", "test", "Wolontariusz", new string[0])]
+        public virtual void CreatingANewUser(string login, string userPassword, string name, string surname, string phoneNumber, string email, string newUserPassword, string role, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "addUser"};
@@ -81,14 +81,18 @@ this.ScenarioSetup(scenarioInfo);
 #line 5
 testRunner.Given("User is on a Main Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 6
-testRunner.When("User click on user list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("User click on login tile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
-testRunner.And("User click on add new user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("User login with {0} and {1}", login, userPassword), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
-testRunner.And(string.Format("User write {0}, {1}, {2}, {3} and {4}", name, surname, phoneNumber, email, role), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("User click on user list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
-testRunner.And("User click save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("User click on add new user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
+testRunner.And(string.Format("User write {0}, {1}, {2}, {3}, {4} and {5}", name, surname, phoneNumber, email, newUserPassword, role), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+testRunner.And("User click save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 12
 testRunner.Then("User see results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

@@ -69,7 +69,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>newUserAdd.feature</DependentUpon>
     </Compile>
-    <Compile Include="Object\BaseObject.cs" />
+    <Compile Include="Object\DriverFactory.cs" />
+    <Compile Include="Object\LoginPageObject.cs" />
     <Compile Include="Object\MainPageObject.cs" />
     <Compile Include="Steps\NewPostAddSteps.cs" />
     <Compile Include="Object\ActivListPageObject.cs" />

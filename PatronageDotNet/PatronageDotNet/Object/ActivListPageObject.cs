@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace PatronageDotNet.Object.ActiveList
 {
-    public class ActiveListPageObject : BasePageObject
+    public class ActiveListPageObject
     {
-        public ActiveListPageObject(IWebDriver driver)
-         : base(driver)
+        public ActiveListPageObject(IWebDriver Driver)
         {
             PageFactory.InitElements(Driver, this);
         }

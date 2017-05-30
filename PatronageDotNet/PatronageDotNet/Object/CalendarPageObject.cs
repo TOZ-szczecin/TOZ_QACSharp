@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace PatronageDotNet.Object.Calendar
 {
-    public class CalendarPageObject : BasePageObject
+    public class CalendarPageObject
     {
-        public CalendarPageObject(IWebDriver driver)
-         : base(driver)
+        public CalendarPageObject(IWebDriver Driver)
         {
             PageFactory.InitElements(Driver, this);
         }
