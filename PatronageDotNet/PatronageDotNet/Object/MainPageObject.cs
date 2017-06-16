@@ -8,16 +8,21 @@ using System.Threading.Tasks;
 
 namespace PatronageDotNet.Object.MainPage
 {
-    public class MainPageObject : BasePageObject
+    public class MainPageObject
     {
-        public MainPageObject(IWebDriver driver)
-         : base(driver)
+        public MainPageObject(IWebDriver Driver)
         {
             PageFactory.InitElements(Driver, this);
         }
 
+        [FindsBy(How = How.PartialLinkText, Using = "Zaloguj")]
+        public IWebElement loginTile { get; set; }
+
         [FindsBy(How = How.LinkText, Using = "Lista aktualności")]
         public IWebElement RedBox { get; set; }
 
+        [FindsBy(How = How.LinkText, Using = "Użytkownicy")]
+        public IWebElement OrangeBox { get; set; }
     }
+    
 }

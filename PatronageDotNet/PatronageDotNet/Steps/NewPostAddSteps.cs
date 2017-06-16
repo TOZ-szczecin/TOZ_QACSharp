@@ -6,35 +6,36 @@ using TechTalk.SpecFlow;
 using System;
 using OpenQA.Selenium.Support.UI;
 using PatronageDotNet.Object.MainPage;
+using PatronageDotNet.Object.DriverFactory;
 
 namespace PatronageDotNet
 {
 
     [Binding]
-    public class NewPostAddSteps
+    public class NewPostAddSteps: DriverFactory
     {
-        private IWebDriver _driver;
+
         private MainPageObject _Main;
         private ActiveListPageObject _Activ;
 
         [BeforeScenario]
-         public void BeforeTest()
-         {
-         _driver = new ChromeDriver();
- 
-         }
-         [AfterScenario]
-         public void AfterTest()
-         {
-         _driver.Quit();
-         }
+        public void BeforeTest()
+        {
+            new DriverFactory();
+        }
+
+        [AfterScenario]
+        public void AfterTest()
+        {
+            this.destroyDriver();
+        }
 
         [Given(@"Im on Main Page")]
         public void GivenImOnMainPage()
         {
-            _driver.Navigate().GoToUrl("https://toz-backoffice.now.sh/");
-            _Main = new MainPageObject(_driver);
-            _Activ = new ActiveListPageObject(_driver);
+            this.getDriver().Navigate().GoToUrl("http://192.168.99.100:5001/");
+            _Main = new MainPageObject(this.getDriver());
+            _Activ = new ActiveListPageObject(this.getDriver());
         }
 
 
@@ -42,7 +43,7 @@ namespace PatronageDotNet
         [When(@"I go to News page")]
         public void WhenIGoToNewsPage()
         {
-            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            var wait = new WebDriverWait(this.getDriver(), TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementToBeClickable(_Main.RedBox));
             _Main.RedBox.Click();
         }
@@ -50,7 +51,7 @@ namespace PatronageDotNet
         [When(@"I press add new info button")]
         public void WhenIPressAddNewInfoButton()
         {
-            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            var wait = new WebDriverWait(this.getDriver(), TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementToBeClickable(_Activ.createPostButton));
             _Activ.createPostButton.Click();
           
@@ -60,7 +61,7 @@ namespace PatronageDotNet
         [When(@"I wrote (.*) and (.*)")]
         public void WhenIWroteAnd(string title, string text)
         {
-            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            var wait = new WebDriverWait(this.getDriver(), TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementToBeClickable(_Activ.mainTitle));
             _Activ.mainTitle.SendKeys(title);
             _Activ.mainText.SendKeys(text);
